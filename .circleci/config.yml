@@ -1,14 +1,24 @@
-
 version: 2.1
 
 orbs:
   node: circleci/node@4.7
+  cypress: cypress-io/cypress@1.37.0
 
 workflows:
-  sample: 
+  sample:
     jobs:
-      - node/test:
-      
-          version: '16.10'
-         
-          pkg-manager: npm
+      - build-and-test
+
+jobs:
+  build-and-test:
+    executor: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run:
+                name: Install dependencies
+                command: npm install
+            - cypress/install
+            - cypress/run:
+                browser: chrome

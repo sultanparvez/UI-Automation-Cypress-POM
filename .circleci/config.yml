@@ -2,15 +2,26 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
 jobs:
-  build:
-    docker:
-      - image: circleci/node:16.10
+  setup:
+    executor:
+      name: node/default
+    steps:
+      - run:
+          name: Install dependencies
+          command: sudo apt-get update && sudo apt-get install -y xvfb
+  test:
+    executor:
+      name: node/default
     steps:
       - checkout
-      - run: sudo apt-get update && sudo apt-get install -y xvfb
-      - node/test:
-          pkg-manager: npm
+      - node/install-packages
+      - run:
+          name: Run tests
+          command: npm test
 workflows:
   sample:
     jobs:
-      - build
+      - setup
+      - test:
+          requires:
+            - setup

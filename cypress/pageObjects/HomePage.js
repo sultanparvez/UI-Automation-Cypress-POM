@@ -8,7 +8,7 @@ class HomePage{
         return cy.get('#exampleFormControlSelect1')
     }
    getTwoWayDataBindings(){
-        return cy.get(' div > h4 > input[name="name"]')
+        return cy.get(' div > h4 > input[name="nama"]')
     }
     getEntrepenurRadioButton(){
         return cy.get('#inlineRadio3')

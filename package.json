@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
 
-    "test": "npx cypress run",
+    "test": "npx cypress run --config-file cypress.config.js",
     "headTest": "npm run test -- --browser chrome --headed",
     "dashboardTest": "npm test -- --record --key dbc20950-09d2-4421-af74-d48b746fa8ae",
     "ProductSelect": "npx cypress-tags run -e TAGS=@ProductSelect --browser chrome --headed --record --key dbc20950-09d2-4421-af74-d48b746fa8ae"

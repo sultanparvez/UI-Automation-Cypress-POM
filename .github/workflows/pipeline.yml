@@ -1,4 +1,4 @@
-name: Schedule Action
+name: Buid-And-Test
 
 on: [push]
 

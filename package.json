@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
+    "start": "http-server",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:record": "cypress run --record --key",
     "test": "npx cypress run",
     "headTest": "npm run test -- --browser chrome --headed",
     "dashboardTest": "npm test -- --record --key dbc20950-09d2-4421-af74-d48b746fa8ae",

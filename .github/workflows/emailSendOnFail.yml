@@ -17,7 +17,7 @@ jobs:
         run: npm test
 
       - name: Send email with results if tests fail
-        if: ${{ failure() }}
+        if: ${{ success() }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.sendgrid.net

@@ -28,3 +28,8 @@ jobs:
           to: sultanparvez77.sp@gmail.com
           from: sultan.parvez@dsinnovators.com
           body: The Cypress tests have failed.
+          attachments: |
+          name: test-results.html
+          path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html
+          type: text/html
+

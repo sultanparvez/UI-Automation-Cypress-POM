@@ -27,7 +27,7 @@ jobs:
           subject: Environment is down.
           to: sultan.parvez@dsinnovators.com
           from: sultanparvez77.sp@gmail.com
-          body: One or mutiple is down, detail is attached.
+          body: One or mutiple is down, details are attached.
           attachments: |
             name: test-results.html
             path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html

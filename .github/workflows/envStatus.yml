@@ -34,5 +34,4 @@ jobs:
           attachments:
             - filename: 'mochawesome.html'
               encoding: 'base64'
-              content_type: text/html
               path: '/home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html'

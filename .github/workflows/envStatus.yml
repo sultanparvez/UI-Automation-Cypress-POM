@@ -18,6 +18,12 @@ jobs:
       - name: Run Cypress tests
         run: npm test
 
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v2
+        with:
+          name: Cypress HTML Report
+          path: /home/runner/work/AutomatedLoginTest/AutomatedLoginTest/cypress/reports/html/index.html        
+
       - name: Send email with results if tests fail
         if: ${{ success() }}
         uses: dawidd6/action-send-mail@v3
@@ -29,10 +35,7 @@ jobs:
           subject: Environment is down.
           to: sultan.parvez@dsinnovators.com
           from: sultanparvez77.sp@gmail.com
-          body: One or mutiple is down, details are attached.
-          attachments:
-            - filename: 'mochawesome.html'
-              path: '/home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html'
-              contentType: 'text/html'
-
+          body: One or mutiple env is down, details are attached below.
+          attachments: |
+            /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html
 

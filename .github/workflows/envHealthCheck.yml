@@ -29,7 +29,7 @@ jobs:
           from: sultanparvez77.sp@gmail.com
           body: One or mutiple is down, details are attached below.
           contentType: 'text/html'
-          attachments:
+          attachments: |
             path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html
               
 

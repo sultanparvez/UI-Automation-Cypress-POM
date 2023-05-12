@@ -20,7 +20,7 @@ jobs:
         if: ${{ success() }}
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.sendgrid.net
+          server_address: smtp.gmail.com
           server_port: 587
           username: ${{ secrets.SENDGRID_USERNAME }}
           password: ${{ secrets.SENDGRID_PASSWORD }}

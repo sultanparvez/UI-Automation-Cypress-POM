@@ -24,10 +24,10 @@ jobs:
           server_port: 587
           username: ${{ secrets.SENDGRID_USERNAME }}
           password: ${{ secrets.SENDGRID_PASSWORD }}
-          subject: Cypress test results - Failed
-          to: sultanparvez77.sp@gmail.com
-          from: sultan.parvez@dsinnovators.com
-          body: The Cypress tests have failed.
+          subject: Environment is down.
+          to: sultan.parvez@dsinnovators.com
+          from: sultanparvez77.sp@gmail.com
+          body: One or mutiple is down, detail is attached.
           attachments: |
             name: test-results.html
             path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html

@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Cypress HTML Report
-          path: /home/runner/work/AutomatedLoginTest/AutomatedLoginTest/cypress/reports/html/index.html        
+          path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html       
 
       - name: Send email with results if tests fail
         if: ${{ success() }}

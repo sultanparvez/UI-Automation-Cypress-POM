@@ -28,7 +28,7 @@ jobs:
           to: sultan.parvez@dsinnovators.com
           from: sultanparvez77.sp@gmail.com
           body: One or mutiple is down, details are attached.
-          attachments:
+          attachments: |
             - filename: 'mochawesome.html'
               path: '/home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html'
               contentType: 'text/html'

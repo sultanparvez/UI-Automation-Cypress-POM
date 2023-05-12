@@ -34,7 +34,7 @@ jobs:
           password: ${{ secrets.SENDGRID_PASSWORD }}
           subject: Environment is down.
           to: sultan.parvez@dsinnovators.com
-          from: sultanparvez77.sp@gmail.com
+          from: noreply@dsinnovators.com
           body: One or mutiple env is down, details are attached below.
           attachments: |
             /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html

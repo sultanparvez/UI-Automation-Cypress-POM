@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: npm install
+        run: npm i
 
       - name: Run Cypress tests
         run: npm test
@@ -28,10 +28,9 @@ jobs:
           to: sultan.parvez@dsinnovators.com
           from: sultanparvez77.sp@gmail.com
           body: One or mutiple is down, details are attached.
-          attachments: |
-            name: test-results.html
-            path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html
-            type: text/html
+          attachments:
+            - filename: 'mochawesome.html'
+              path: '/home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html'
+              contentType: 'text/html'
 
 
-          

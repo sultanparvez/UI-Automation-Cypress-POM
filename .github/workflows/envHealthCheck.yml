@@ -23,7 +23,7 @@ jobs:
           path: /home/runner/work/UI-Automation-Cypress-POM/UI-Automation-Cypress-POM/mochawesome-report/mochawesome.html       
 
       - name: Send email with results if tests fail
-        if: ${{ success() }}
+        if: ${{ failure() }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com

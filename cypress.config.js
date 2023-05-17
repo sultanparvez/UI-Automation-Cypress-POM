@@ -4,7 +4,7 @@ const cucumber = require('cypress-cucumber-preprocessor').default
 module.exports = defineConfig({
   reporter: 'mochawesome',
   reporterOptions: {
-    code : false,
+    // code : false,
     charts: true,
     hml: true,
     reportPageTitle: 'Cypress Automation Report',

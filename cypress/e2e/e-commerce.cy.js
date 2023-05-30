@@ -1,10 +1,11 @@
 /// <reference types="cypress"/>
 
-import HomePageModel from "../models/homePageModel"
-import  ProductPageModel  from "../models/productPageModel"
+import homePageTestCases from "./testCases/homePageTestCases"
+import productPageTestCases from "./testCases/productPageTestCases"
 
-const homePage= new HomePageModel()
-const productPage = new ProductPageModel()
+const homePage= new homePageTestCases()
+const productPage = new productPageTestCases()
+
 describe("E-Shopping",()=>{
     beforeEach(() => {
         cy.fixture("person").then (function(person){
@@ -12,26 +13,13 @@ describe("E-Shopping",()=>{
             this.person = person
         })
     })
+
     it("login Validation",function(){  
         cy.visit("/")
-        homePage.setName(this.person.name);
-        homePage.setGenderBox(this.person.gender);
-        homePage.assertTwoWayDataBindings(this.person.name);
-        homePage.assertMinLength();
-        homePage.disableEntrepenurRadioButton();
-        homePage.enableEntrepenurRadioButton();
-        homePage.clickShopButton();  
+        homePage.login(this.person.name,this.person.gender);
         })
 
-       it("Validate able to select products",function(){  
-       productPage.selectProduct(this.person.productName);
-       productPage.clickCheckout();  
-       productPage.ValidateTotalPriceIsCorrect();
-       productPage.ContinueCheckout();
-       productPage.setDelivaryLocation(this.person.address);
-       productPage.setCountry();
-       productPage.agreeWithTermsAndCondtion();
-       productPage.clickOnPurchaseButton();
-       productPage.ValidateSucessMessage();      
+    it("Validate able to select products",function(){  
+        productPage.ValidateProductSelectionFunctionality(this.person.productName,this.person.address)
         })
 })

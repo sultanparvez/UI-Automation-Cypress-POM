@@ -1,10 +1,10 @@
 /// <reference types="cypress"/>
 
-import homePageTestCases from "./testCases/homePageTestCases"
-import productPageTestCases from "./testCases/productPageTestCases"
+import testHomePage from "./tests/testHomePage"
+import testProductPage from "./tests/testProductPage"
 
-const homePage= new homePageTestCases()
-const productPage = new productPageTestCases()
+const homePage= new testHomePage()
+const productPage = new testProductPage()
 
 describe("E-Shopping",()=>{
     beforeEach(() => {

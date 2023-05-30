@@ -2,7 +2,7 @@ import {ProductPage} from "../pageObjects/ProductPage"
 
 const productPage= new ProductPage();
 
-class productPageTestCases{
+class testProductPage{
     ValidateProductSelectionFunctionality(productName,address){
         productPage.selectProduct(productName);
         productPage.clickCheckout();  
@@ -17,4 +17,4 @@ class productPageTestCases{
 
 }
 
-export default productPageTestCases;
+export default testProductPage;

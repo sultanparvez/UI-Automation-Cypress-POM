@@ -2,7 +2,7 @@ import HomePage from "../pageObjects/HomePage"
 
 const homePage= new HomePage()
 
-class homePageTestCases {
+class testHomePage {
 login(name,gender){
     homePage.setName(name);
     homePage.setGenderBox(gender);
@@ -13,4 +13,4 @@ login(name,gender){
     homePage.clickShopButton(); 
     }     
 }
-export default homePageTestCases;
+export default testHomePage;

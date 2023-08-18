@@ -3,28 +3,27 @@
 This automation project utilized page object model. Here, I have Separated tests based on pages. Also separted page objects based 
 on pages in order to  abstract the interactions with the UI elements away from the test cases. 
 
-
+``` kotlin
 cypress/
 ├── fixtures/
-│ └── data.json
+│   └── data.json
 ├── e2e/
-│ ├── pageObjects/
-│ │ ├── page1.js
-│ │ ├── page2.js
-│ ├── tests/
-│ │ ├── testHomePage.js
-│ │ ├── testLoginPage.js
-│ │ └── ...
-│ ├── index.cy.js
+│   ├── pageObjects/
+│   │   ├── page1.js
+│   │   ├── page2.js
+│   ├── tests/
+│   │   ├── testHomePage.js
+│   │   ├── testLoginPage.js
+│   │   └── ...
+│   ├── index.cy.js
 ├── support/
-│ ├── commands.js
-│ └── ...
+│   ├── commands.js
 └── screenshots/
 └── videos/
 .github/
 └── workflows/
-├── scheduled_tests.yml
-└── ...
+    ├── scheduled_tests.yml
+```
 
 Here, I encapsulated complex interactions and verifications within the page objects. 
 this ensures code reusability and maintains a clear separation of concerns.

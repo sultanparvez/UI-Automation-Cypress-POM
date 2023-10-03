@@ -1,25 +1,39 @@
-class HomePage{
-    //  Object
 
+ //  Object
+const nameBox = 'form .form-group input[name="name"]'
+
+const genderBox = '#exampleFormControlSelect1'
+
+const twoWayDataBindings = ' div > h4 > input[name="name"]'
+
+const entrepenurRadioButton = '#inlineRadio3'
+
+const employeeRadioButton = '#inlineRadio2'
+
+const shopButton = ' a[href="/angularpractice/shop"]'
+
+class HomePage{
+   
+//  Methods or Funtions
     getNameBox(){
-        return cy.get('form .form-group input[name="name"]')
+        return cy.get(nameBox)
     }
     getGenderBox(){
-        return cy.get('#exampleFormControlSelect1')
+        return cy.get(genderBox)
     }
    getTwoWayDataBindings(){
-        return cy.get(' div > h4 > input[name="name"]')
+        return cy.get(twoWayDataBindings)
     }
     getEntrepenurRadioButton(){
-        return cy.get('#inlineRadio3')
+        return cy.get(entrepenurRadioButton)
     }
     getEmployeeRadioButton(){
-        return cy.get('#inlineRadio2')
+        return cy.get(employeeRadioButton)
     }
     getShopButton(){
-        return cy.get(' a[href="/angularpractice/shop"]')
+        return cy.get(shopButton)
     }
-    //  Methods or Funtions
+ 
 
     setName(name){
         this.getNameBox().type(name)

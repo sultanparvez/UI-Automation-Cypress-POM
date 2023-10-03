@@ -1,32 +1,43 @@
+//  Object
+const checkoutButton = '#navbarResponsive .navbar-nav .nav-item .nav-link'
+const secondCheckout = '.btn.btn-success'
+const deliveryLocationBox ='input[id="country"]'
+const country = '.suggestions > ul > li > a'
+const termsAgreementCheckbox = 'div div #checkbox2'
+const purchaseButton = '.ng-untouched > .btn'
+const SuccessMsg = '.alert'
+const priceOfAllProduct = 'tr > td:nth-child(4) > strong'
+const totals = ' tr > td > h3 > strong'
+
 export class ProductPage {
-    //  Object
+
 
     getCheckoutButton(){
-        return cy.get('#navbarResponsive .navbar-nav .nav-item .nav-link')
+        return cy.get(checkoutButton)
     }
     getSecondCheckout(){
-        return cy.get('.btn.btn-success')
+        return cy.get(secondCheckout)
     }
-    geDeliveryLocationBox(){
-        return cy.get('input[id="country"]')
+    getDeliveryLocationBox(){
+        return cy.get(deliveryLocationBox)
     }
     getCountry(){
-        return cy.get('.suggestions > ul > li > a')
+        return cy.get(country)
     }
     getTermsAgreementCheckbox(){
-        return cy.get('div div #checkbox2')
+        return cy.get(termsAgreementCheckbox)
     }
     getPurchaseButton(){
-        return cy.get('.ng-untouched > .btn')
+        return cy.get(purchaseButton)
     }
     getSuccessMsg(){
-        return cy.get('.alert')
+        return cy.get(SuccessMsg)
     }
     getPriceOfAllProduct(){
-        return cy.get( 'tr > td:nth-child(4) > strong')
+        return cy.get( priceOfAllProduct)
     }
     getTotals(){
-        return cy.get(' tr > td > h3 > strong')
+        return cy.get(totals)
     }
 
     //  Methods or Funtions
@@ -56,7 +67,7 @@ export class ProductPage {
         this.getSecondCheckout().click()
     }
     setDelivaryLocation(location){
-        this.geDeliveryLocationBox().type(location)
+        this.getDeliveryLocationBox().type(location)
     }
     setCountry(){
         this.getCountry().click()

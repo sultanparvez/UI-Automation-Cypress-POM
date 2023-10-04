@@ -37,24 +37,31 @@ class HomePage{
 
     setName(name){
         this.getNameBox().type(name)
+        return this
      }
      setGenderBox(gender){
         this.getGenderBox().select(gender)
+        return this
      }
     assertTwoWayDataBindings(name){
         this.getTwoWayDataBindings().should('have.value',name)
+        return this
     }
     assertMinLength(){
         this.getNameBox().should('have.attr','minlength','2')
+        return this
     }
      disableEntrepenurRadioButton(){
         this.getEntrepenurRadioButton().should('be.disabled')
+        return this
      }
     enableEntrepenurRadioButton(){
         this.getEmployeeRadioButton().should('be.enabled')
+        return this
     }
     clickShopButton(){
         this.getShopButton().click()
+        return this
     }
 
 }

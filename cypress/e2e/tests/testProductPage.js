@@ -4,15 +4,15 @@ const productPage= new ProductPage();
 
 class testProductPage{
     ValidateProductSelectionFunctionality(productName,address){
-        productPage.selectProduct(productName);
-        productPage.clickCheckout();  
-        productPage.ValidateTotalPriceIsCorrect();
-        productPage.ContinueCheckout();
-        productPage.setDelivaryLocation(address);
-        productPage.setCountry();
-        productPage.agreeWithTermsAndCondtion();
-        productPage.clickOnPurchaseButton();
-        productPage.ValidateSucessMessage();   
+        productPage.selectProduct(productName)
+                .clickCheckout()
+                .ValidateTotalPriceIsCorrect()
+                .ContinueCheckout()
+                .setDelivaryLocation(address)
+                .setCountry()
+                .agreeWithTermsAndCondtion()
+                .clickOnPurchaseButton()
+                .ValidateSucessMessage()  
     }
 
 }

@@ -46,9 +46,11 @@ export class ProductPage {
         products.forEach(function(product){
             cy.selectProduct(product)
             }) 
+            return this;
     }
     clickCheckout(){
     this.getCheckoutButton().click()
+    return this;
     }   
     ValidateTotalPriceIsCorrect(){
     var sum = 0
@@ -56,33 +58,41 @@ export class ProductPage {
        const amounts= $el.text()
         const prices = amounts.split(" ")
         sum = sum+Number(prices[1])
+    
     })
     this.getTotals().then((element)=>{
         const TotalAmount= element.text()
         const Total = TotalAmount.split(" ")
         expect(sum).to.equal(Number(Total[1]))
     })
+    return this;
     }
     ContinueCheckout(){
         this.getSecondCheckout().click()
+        return this;
     }
     setDelivaryLocation(location){
         this.getDeliveryLocationBox().type(location)
+        return this;
     }
     setCountry(){
         this.getCountry().click()
+        return this;
     }
     agreeWithTermsAndCondtion(){
         this.getTermsAgreementCheckbox().click({force:true})
+        return this;
     }
    clickOnPurchaseButton(){
     this.getPurchaseButton().click()
+    return this;
    }
    ValidateSucessMessage(){
     this.getSuccessMsg().then((element)=>{
         const actualText = element.text()
         expect(actualText.includes("Success")).to.be.true
     }) 
+    return this;
 }
 
 }

@@ -15,7 +15,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
 
     },
-    specPattern: "cypress/e2e/*.cy.js",
+    // specPattern: "cypress/e2e/*.cy.js",
+    specPattern:"cypress/EcommerceTests/*.js",
     baseUrl:"https://rahulshettyacademy.com/angularpractice/",
     defaultCommandTimeout : 8000,
     pageLoadTimeout : 10000

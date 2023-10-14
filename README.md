@@ -45,4 +45,5 @@ npm test
 * cypress,
 * cypress-mochawesome-reporter
 
-<font face="Arial, sans-serif" style="font-size: 18px;">Please visitPOM2.0.0 branch for a different approach </font>
+## Note
+Please visitPOM2.0.0 branch for a different approach

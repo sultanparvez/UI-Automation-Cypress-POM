@@ -1,21 +1,21 @@
 # UI Automation Cypress
 
-This automation project utilized page object model. Here, I have Separated tests based on pages. Also separted page objects based 
+This automation project utilized the page object model. Here, I have Separated tests based on pages. Also, separated page objects based 
 on pages in order to  abstract the interactions with the UI elements away from the test cases. 
 
 ``` kotlin
 cypress/
 ├── fixtures/
 │   └── data.json
-├── e2e/
-│   ├── pageObjects/
-│   │   ├── page1.js
-│   │   ├── page2.js
-│   ├── tests/
-│   │   ├── testHomePage.js
-│   │   ├── testLoginPage.js
-│   │   └── ...
-│   ├── index.cy.js
+├── pageObjects/
+│   ├── page1/
+|     └── page1.js
+│   ├── page2/
+|     └── page2.js
+│   ├── common/
+|     └── reusable.js
+├── tests/
+├── verifyWorkflow.js
 ├── support/
 │   ├── commands.js
 └── screenshots/

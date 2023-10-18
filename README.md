@@ -45,5 +45,4 @@ npm test
 * cypress,
 * cypress-mochawesome-reporter
 
-## Note
-Please visit [POM2.0.0](https://github.com/sultanparvez/UI-Automation-Cypress-POM/tree/POM2.0.0) branch for a different approach
+

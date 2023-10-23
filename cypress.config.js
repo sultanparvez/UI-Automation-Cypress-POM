@@ -16,6 +16,7 @@ module.exports = defineConfig({
 
     },
     // specPattern: "cypress/e2e/*.cy.js",
+    testIsolation: false,
     specPattern:"cypress/EcommerceTests/*.js",
     baseUrl:"https://rahulshettyacademy.com/angularpractice/",
     defaultCommandTimeout : 8000,

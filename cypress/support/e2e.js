@@ -1,2 +1,2 @@
 
-import './commands'
+import './Commands/customCommands'

@@ -1,6 +1,6 @@
-import ReusableMethods from "../pageObjects/EcommerceCommon/ReusableMethod"
-import HomePage from "../pageObjects/HomePage/HomePage"
-import { ProductPage } from "../pageObjects/ProductPage/ProductPage"
+import HomePage from "../support/wiring/HomePage/HomePageFunctions"
+import ProductPage from "../support/wiring/ProductPage/ProductPageFunctions"
+import ReusableMethods from "../support/wiring/Reusables/ReusableMethod"
 
 const homePage = new HomePage()
 const productPage = new ProductPage()

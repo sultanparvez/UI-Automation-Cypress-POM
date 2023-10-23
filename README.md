@@ -16,6 +16,8 @@ cypress/
 │   │   ├── Page2/
 │   │   │   └── Page2Objects.js
 │   ├── wiring/
+│   │   ├── Reusables/
+│   │   │   └── Reusable.js
 │   │   ├── Page1/
 │   │   │   └── Page1Functions.js
 │   │   ├── Page2/

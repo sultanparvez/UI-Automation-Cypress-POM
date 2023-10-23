@@ -20,9 +20,6 @@ cypress/
 │   ├── commands.js
 └── screenshots/
 └── videos/
-.github/
-└── workflows/
-    ├── scheduled_tests.yml
 ```
 
 Here, I encapsulated complex interactions and verifications within the page objects. 

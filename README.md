@@ -7,22 +7,24 @@ on pages in order to  abstract the interactions with the UI elements away from t
 cypress/
 ├── fixtures/
 │   └── data.json
-├── pageObjects/
-│   ├── page1/
-|     └── page1.js
-│   ├── page2/
-|     └── page2.js
-│   ├── common/
-|     └── reusable.js
-├── tests/
-├── verifyWorkflow.js
 ├── support/
-│   ├── commands.js
+│   ├── commands/
+│   │   └── customCommands.js
+│   ├── pageObjects/
+│   │   ├── Page1/
+│   │   │   └── Page1Objects.js
+│   │   ├── Page2/
+│   │   │   └── Page2Objects.js
+│   ├── wiring/
+│   │   ├── Page1/
+│   │   │   └── Page1Functions.js
+│   │   ├── Page2/
+│   │   │   └── Page2Functions.js
+├── tests/
+│   ├── verifyWorkflow.js
 └── screenshots/
 └── videos/
-.github/
-└── workflows/
-    ├── scheduled_tests.yml
+
 ```
 
 Here, I encapsulated complex interactions and verifications within the page objects. 

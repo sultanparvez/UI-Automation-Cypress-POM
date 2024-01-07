@@ -1,0 +1,11 @@
+version: '3.8'
+services: 
+    portoCommerce:
+        image: portocommerce
+        build: 
+            context: .
+            dockerfile: ./Dockerfile
+        volumes:
+           -  ./dockerReports:/app/mochawesome-report/
+        command: ["npm", "test"]
+    

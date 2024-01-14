@@ -7,7 +7,7 @@ const productPage = new ProductPage()
 const reusableMethods = new ReusableMethods()
 
 
-describe("E-Shopping",()=>{
+describe("E-Shopping Funtionality",()=>{
     let name = "ProtoCustomer"+reusableMethods.generateDateTimeString()
     const genderArray = ["Male","Female"]
     const countryArray = ["Bangladesh", "United States"]
@@ -15,16 +15,13 @@ describe("E-Shopping",()=>{
 
     before(()=>{
         cy.visit("/")
-    })
-
-    it("login Validation",()=>{  
-    homePage.setName(name)
-            .setGenderBox(genderArray[Math.floor(Math.random()*2)])
-            .assertTwoWayDataBindings(name)
-            .assertMinLength()
-            .disableEntrepenurRadioButton()
-            .enableEntrepenurRadioButton()
-            .clickShopButton()
+        homePage.setName(name)
+        .setGenderBox(genderArray[Math.floor(Math.random()*2)])
+        .assertTwoWayDataBindings(name)
+        .assertMinLength()
+        .disableEntrepenurRadioButton()
+        .enableEntrepenurRadioButton()
+        .clickShopButton()
     })
     it("Validate able to select products",()=>{  
         productPage.selectProduct(productNames)

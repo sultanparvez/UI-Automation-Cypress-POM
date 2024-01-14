@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npx cypress run",
     "headTest": "npm run test -- --browser chrome --headed",
+    "headTest:all": "npm run test -- --browser chrome --headed --spec cypress/EcommerceTests/allSpecs.js ",
     "dashboardTest": "npm test -- --record --key dbc20950-09d2-4421-af74-d48b746fa8ae",
     "ProductSelect": "npx cypress-tags run -e TAGS=@ProductSelect --browser chrome --headed --record --key dbc20950-09d2-4421-af74-d48b746fa8ae"
   },

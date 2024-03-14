@@ -13,7 +13,7 @@ class ProductPageObjects {
 
     /**
      * Get Checkout Button
-     * @return {*} checkoutButton
+     * @return checkoutButton
      * @memberof ProductPageObjects
      */
     getCheckoutButton(){
@@ -21,7 +21,7 @@ class ProductPageObjects {
     }
     /**
      * Get Second Checkout 
-     * @return {*} secondCheckout
+     * @return secondCheckout
      * @memberof ProductPageObjects
      */
     getSecondCheckout(){
@@ -29,7 +29,7 @@ class ProductPageObjects {
     }
     /**
      * Get Delivary Location Box
-     * @return {*} delivaryLocationBox
+     * @return delivaryLocationBox
      * @memberof ProductPageObjects
      */
     getDeliveryLocationBox(){
@@ -37,7 +37,7 @@ class ProductPageObjects {
     }
     /**
      * Get Country Location 
-     * @return {*} country 
+     * @return country 
      * @memberof ProductPageObjects
      */
     getCountry(){
@@ -45,7 +45,7 @@ class ProductPageObjects {
     }
     /**
      * Get Terms Agreement Checkbox 
-     * @return {*} termsAgreementCheckbox
+     * @return termsAgreementCheckbox
      * @memberof ProductPageObjects
      */
     getTermsAgreementCheckbox(){
@@ -53,7 +53,7 @@ class ProductPageObjects {
     }
     /**
      * Get Purchase Button Locator
-     * @return {*} purchaseButton
+     * @return purchaseButton
      * @memberof ProductPageObjects
      */
     getPurchaseButton(){
@@ -61,7 +61,7 @@ class ProductPageObjects {
     }
     /**
      * Get Success Meassage Locator
-     * @return {*} successMsg
+     * @return successMsg
      * @memberof ProductPageObjects
      */
     getSuccessMsg(){
@@ -69,7 +69,7 @@ class ProductPageObjects {
     }
     /**
      * Get Price Of All Product Locator
-     * @return {*} priceOfAllProduct
+     * @return priceOfAllProduct
      * @memberof ProductPageObjects
      */
     getPriceOfAllProduct(){
@@ -77,7 +77,7 @@ class ProductPageObjects {
     }
     /**
      * Get Totals Locator
-     * @return {*} totals
+     * @return totals
      * @memberof ProductPageObjects
      */
     getTotals(){

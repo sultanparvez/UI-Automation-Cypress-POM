@@ -8,3 +8,4 @@ package-lock.json
 mochawesome-report\mochawesome.html
 mochawesome-report\mochawesome.json
 jsconfig.json
+dockerReports/

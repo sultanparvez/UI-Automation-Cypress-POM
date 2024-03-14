@@ -14,6 +14,7 @@ describe("E-Shopping Funtionality",()=>{
     })
 
     it("login Validation",()=>{  
+        cy.testCase("Login", "Validate user is able to login correctly")
     homePage.setName(name)
             .setGenderBox(genderArray[Math.floor(Math.random()*2)])
             .assertTwoWayDataBindings(name)
@@ -21,5 +22,6 @@ describe("E-Shopping Funtionality",()=>{
             .disableEntrepenurRadioButton()
             .enableEntrepenurRadioButton()
             .clickShopButton()
+            cy.casePassed("Login", "Validate user is able to login correctly")
     })
 })

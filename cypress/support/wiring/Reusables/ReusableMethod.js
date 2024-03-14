@@ -1,7 +1,7 @@
 class ReusableMethods{
     /**
      * Generate Date Time As String
-     * @return {*} 
+     * @return dateTimeString
      * @memberof ReusableMethods
      */
     generateDateTimeString(){

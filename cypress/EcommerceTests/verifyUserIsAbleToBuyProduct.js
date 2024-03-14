@@ -24,6 +24,7 @@ describe("E-Shopping Funtionality",()=>{
         .clickShopButton()
     })
     it("Validate able to select products",()=>{  
+        cy.testCase("Select Products ", "Validate able to select products")
         productPage.selectProduct(productNames)
                 .clickCheckout()
                 .ValidateTotalPriceIsCorrect()
@@ -33,6 +34,7 @@ describe("E-Shopping Funtionality",()=>{
                 .agreeWithTermsAndCondtion()
                 .clickOnPurchaseButton()
                 .ValidateSucessMessage()  
+        cy.casePassed("Select Products ", "Validate able to select products")
     })
 })
    

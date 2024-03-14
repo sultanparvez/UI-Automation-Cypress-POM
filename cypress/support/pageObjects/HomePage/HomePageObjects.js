@@ -16,7 +16,7 @@ class HomePageObjects{
    
     /**
      * Get Name Box Locator
-     * @return {*} nameBox
+     * @return nameBox
      * @memberof HomePageObjects
      */
     getNameBox(){
@@ -24,7 +24,7 @@ class HomePageObjects{
     }
     /**
      * Get Gender Checkbox Locator
-     * @return {*} genderBox
+     * @return genderBox
      * @memberof HomePageObjects
      */
     getGenderBox(){
@@ -32,7 +32,7 @@ class HomePageObjects{
     }
    /**
     * Get Two Way Data Bindings Locator
-    * @return {*} twoWayDataBindings
+    * @return twoWayDataBindings
     * @memberof HomePageObjects
     */
    getTwoWayDataBindings(){
@@ -40,7 +40,7 @@ class HomePageObjects{
     }
     /**
      * Get Entrepenur Radio Button Locator
-     * @return {*} entrepenurRadioButton
+     * @return entrepenurRadioButton
      * @memberof HomePageObjects
      */
     getEntrepenurRadioButton(){
@@ -48,7 +48,7 @@ class HomePageObjects{
     }
     /**
      *Get Employee Radio Button Locator
-     * @return {*} employeeRadioButton
+     * @return employeeRadioButton
      * @memberof HomePageObjects
      */
     getEmployeeRadioButton(){
@@ -56,7 +56,7 @@ class HomePageObjects{
     }
     /**
      * Get Shop Button Locator
-     * @return {*} 
+     * @return 
      * @memberof HomePageObjects
      */
     getShopButton(){

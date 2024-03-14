@@ -1,8 +1,27 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
+const registerReportPortalPlugin = require('@reportportal/agent-js-cypress/lib/plugin');
+
 
 module.exports = defineConfig({
-  reporter: 'mochawesome',
+  reporter: 'cypress-multi-reporters',
   reporterOptions: {
+    reporterEnabled: ['@reportportal/agent-js-cypress', 'mochawesome'],
+    reportportalAgentJsCypressReporterOptions: {
+    endpoint: 'http://localhost:8080/api/v1',
+    apiKey: 'ui-cypress_vre_4XYBR1GtYM5ku957prWKRyE2vwrLzJg1AUnoOQiO7AL4uTgCcSQspjtsntJl',
+    launch: 'ui-automation-cypress',
+    project: 'ui-automation-cypress',
+    description: 'E-Commerce Automation',
+    attributes: [
+      {
+        key: 'Headed',
+        value: 'True',
+      }
+     
+    ],
+  },
+
+  mochawesomeReporterOptions: {
     // code : false,
     charts: true,
     hml: true,
@@ -11,9 +30,10 @@ module.exports = defineConfig({
     inlineAssets: true,
     saveAllAttempts:false,
   },
+},
   e2e: {
     setupNodeEvents(on, config) {
-
+      return registerReportPortalPlugin(on, config);
     },
     // specPattern: "cypress/e2e/*.cy.js",
     testIsolation: false,
